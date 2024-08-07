@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: white;
+    color: '#fff';
+}
+
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/background-image.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.container{
+    padding: 10px 10%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.nav-name{
+    font-size: 70px;
+    color: black;
+    font-family: Garamond;
+    width: 160px;
+}
+
+.nav-name span{
+    color: black;
+    font-family: Garamond;
+}
+ nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+ }
+
+ nav ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    font-family: Garamond;
+ }
+
+ nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: black;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s
+ }
+
+ nav ul li a:hover::after{
+    width: 100%;
+ }
+
+ .header-text{
+    margin-top: 20%;
+    font-size: 25px;
+    color: black;
+    font-family: Garamond;
+ }
+
+ .header-text p{
+    font-family: Garamond;
+ }
+
+ .header-text h1{
+    font-size: 50px;
+    margin-top: 20px;
+    font-family: Garamond;
+ }
+
+ .header-text h1 span{
+    color: black;
+    font-family: Garamond;
+ }
+
+/* About */
+.about-title{
+    text-align: center;
+    padding: 20px 0;
+    color: black;
+    font-size: 60px;
+    font-weight:600;
+    color: black;
+    font-family: Garamond;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.about-col-2{
+    flex-basis: 60%;
+
+}
+
+.about-P{
+    max-width: 600px; /* Adjust this value based on your desired maximum width */
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+    font-family: Garamond;
+}
+
+.tab-titles{
+    color: black;
+    display: flex;
+    margin: 20px 0 40px;
+    
+}
+
+.tab-links{
+    margin-right: 50px;
+    font-size: 19px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Garamond;
+}
+
+
+.tab-contents ul{
+    padding-left: 0;
+}
+
+.tab-contents ul li{
+    color: black;
+    list-style: none;
+    margin: 10px 0;
+    text-align: left;
+}
+
+.tab-contents ul li span{
+    color: #b54769;
+    font-size: 14px;
+
+}
+
+#skills{
+    width: 30%;
+    margin-left: 10%;
+    
+
+}
+
+#projects{
+    width: 50%;
+    margin-left: 43%
+}
+
+#education{
+    width: 30%;
+    margin-left: 80%;
+    color: black;
+}
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display: block;
+}
+
+/* services */
+#services{
+    padding: 30px 0;
+    
+
+}
+
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.services-list div{
+    background: black;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-right: 10px;
+    
+}
+
+/* contact */
+.contact-left{
+    margin-top: 15%;
+    flex-basis: 35%;
+}
+
+.contact-right{
+    margin-top: 15%;
+    flex-basis: 60%;
+}
+
+/* .contact-left p{
+    margin-top
+} */
+
+.social-icons{
+    margin-top: 10px;
+}
+
+.social-icons a{
+    margin-right: 15px;
+
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover{
+    transform: translateY(-5px);
+}
+
+.btn{
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff; 
+    border-radius: 6px;
+    background:black;
+}
+
+/* .btn.btn2{
+
+    background:#ff004f;
+    
+ 
+} */
+
+.contact-right form{
+    width: 100%;
+
+}
+
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: black;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+
+}
+
+.sub-title{
+    margin-top: 137px;
+}
+
+@media only screen and (max-width: 600px){
+
+}
+
+#msg{
+    color: #61b752;
+ 
+    display: block;
+}
+
+#projects li{
+    color: white
+}
+
